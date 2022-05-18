@@ -23,9 +23,6 @@ require "fabian.options"
 require "fabian.keymaps"
 require "fabian.commands"
 require "fabian.null-ls"
--- LUALINE
-require('lualine').setup()
-
 require "fabian.lsp"
 require "fabian.treesitter"
 require "fabian.telescope"
