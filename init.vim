@@ -13,12 +13,6 @@ map <F5> :w <bar> :make<kEnter>
 
 
 
-" Using Lua functions
-nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
-nnoremap <leader>fh <cmd>lua require('telescope.builtin').find_files({hidden = true})<cr>
-nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
-
 """" LUA SETTINGS:
 
 lua <<EOF
