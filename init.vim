@@ -59,24 +59,8 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " KEYBINDINGS:
 let mapleader=","
-map ü {
-map + }
 map <F5> :w <bar> :make<kEnter>
-noremap j h
-noremap k j
-noremap l k
-noremap ö l
-noremap gj gh
-noremap gk gj
-noremap gl gk
-noremap gö gl
 
-
-" remap window keybindings
-noremap <c-w>j <c-w>h
-noremap <c-w>k <c-w>j
-noremap <c-w>l <c-w>k
-noremap <c-w>ö <c-w>l 
 
 " Lsp Settings
 
@@ -94,6 +78,7 @@ nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 lua <<EOF
 -- Load The Settings
 require "fabian.options"
+require "fabian.keymaps"
 
 
 
@@ -124,14 +109,10 @@ require'nvim-treesitter.configs'.setup {
 }
 
 -- LSP-CONFIG
-local opts = { noremap=true, silent=true }
-  vim.api.nvim_set_keymap('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
-  vim.api.nvim_set_keymap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
-  vim.api.nvim_set_keymap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
-  vim.api.nvim_set_keymap('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
+
 local on_attach = function(client, bufnr)
   -- Enable completion triggered by <c-x><c-o>
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
