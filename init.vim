@@ -48,6 +48,7 @@ lua <<EOF
 require "fabian.plugins"
 require "fabian.options"
 require "fabian.keymaps"
+require "fabian.null-ls"
 
 
 
@@ -113,11 +114,5 @@ for _, lsp in pairs(servers) do
   }
 end
 
--- null-ls
-require("null-ls").setup({
-    sources = {
-        require("null-ls").builtins.formatting.black,
-    },
-})
 
 EOF
