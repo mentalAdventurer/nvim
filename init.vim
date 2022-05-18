@@ -1,9 +1,4 @@
 
-" AIRLINE:
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#show_splits = 0
-let g:airline#extensions#tabline#show_buffers= 0
-
 " SNIPPETS:
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -16,7 +11,6 @@ map <F5> :w <bar> :make<kEnter>
 
 " Lsp Settings
 
-command! Format execute 'lua vim.lsp.buf.formatting()'
 
 
 " Using Lua functions
