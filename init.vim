@@ -30,32 +30,6 @@ Plug 'jose-elias-alvarez/null-ls.nvim'
 
 call plug#end()
 
-" BASIC CONFIG:
-syntax on 
-set termguicolors
-set background=dark
-colorscheme gruvbox
-set nocompatible
-set tabstop=4 softtabstop=4
-set shiftwidth=4
-set expandtab
-set number
-set relativenumber
-set smartindent
-set undodir=~/.vim/undodir
-set undofile
-set incsearch
-set laststatus=2	" Displays File Information
-set cot=menuone,noinsert,noselect shm+=c "For the Popup menus
-
-filetype plugin on
-" Search down into subfolders
-" Provides tab-completion fo all file-related tasks
-set path+=**
-
-" Display all matching files when we tab complete
-set wildmenu
-
 " COMMANDS:
 " Create the 'tags' file (may need to install ctags first)
 command! MakeTags !ctags -R . 
