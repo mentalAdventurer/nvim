@@ -11,14 +11,14 @@ local keymap = vim.api.nvim_set_keymap
 vim.g.mapleader = ","
 
 -- change to shifted keybindings
-keymap("n", "j", "h", opts)
-keymap("n", "k", "j", opts)
-keymap("n", "l", "k", opts)
-keymap("n", "ö", "l", opts)
-keymap("n", "gj", "gh", opts)
-keymap("n", "gk", "gj", opts)
-keymap("n", "gl", "gk", opts)
-keymap("n", "gö", "gl", opts)
+keymap("", "j", "h", opts)
+keymap("", "k", "j", opts)
+keymap("", "l", "k", opts)
+keymap("", "ö", "l", opts)
+keymap("", "gj", "gh", opts)
+keymap("", "gk", "gj", opts)
+keymap("", "gl", "gk", opts)
+keymap("", "gö", "gl", opts)
 
 -- change window navigation to shifted keybindings
 keymap("n", "<c-w>j", "<c-w>h", opts)
@@ -30,8 +30,5 @@ keymap("n", "<c-w>ö", "<c-w>l", opts)
 keymap("n", "ü", "{", opts)
 keymap("n", "+", "}", opts)
 
--- lsp keybindings
-vim.api.nvim_set_keymap('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
-vim.api.nvim_set_keymap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
-vim.api.nvim_set_keymap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
-vim.api.nvim_set_keymap('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
+
+keymap("n", "<F5>", ":w <bar> :make<kEnter>", opts)
