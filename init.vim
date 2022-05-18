@@ -1,11 +1,3 @@
-" COMMANDS:
-" Create the 'tags' file (may need to install ctags first)
-command! MakeTags !ctags -R . 
-
-" commands for note taking
-command! OpenNote !openNote %
-command! ShotNote !$HOME/.config/nvim/script/screenshotNote %
-
 " FILE BROWSING:
 " Tweaks for browsing
 let g:netrw_banner=0		" disable annoying banner
@@ -44,10 +36,12 @@ nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 """" LUA SETTINGS:
 
 lua <<EOF
+
 -- Load The Setting
 require "fabian.plugins"
 require "fabian.options"
 require "fabian.keymaps"
+require "fabian.commands"
 require "fabian.null-ls"
 
 
