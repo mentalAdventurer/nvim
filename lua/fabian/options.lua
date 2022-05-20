@@ -12,7 +12,6 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.undofile = true
-vim.opt.undodir = "~/.vim/undodir"
 
 vim.opt.smartindent = true
 vim.opt.showtabline = 2

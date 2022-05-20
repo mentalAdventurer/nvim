@@ -31,4 +31,4 @@ keymap("n", "ü", "{", opts)
 keymap("n", "+", "}", opts)
 
 
-keymap("n", "<F5>", ":w <bar> :make<kEnter>", opts)
+keymap("n", "<F5>", "<cmd>make<cr>", opts)
