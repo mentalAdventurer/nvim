@@ -10,3 +10,6 @@ command('ShotNote', '!$HOME/.config/nvim/script/screenshotNote %', {})
 
 command('Format','lua vim.lsp.buf.formatting()',{})
 command('MakeTags', '!ctags -R .', {}) 
+
+command('AutoCmp', 'lua require("cmp").setup.buffer { enabled = True }',{})
+command('NoAutoCmp', 'lua require("cmp").setup.buffer { enabled = False }',{})
