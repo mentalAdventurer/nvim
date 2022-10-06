@@ -19,6 +19,7 @@ Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 -- theme
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'nvim-lualine/lualine.nvim'
+Plug('catppuccin/nvim',{['as'] = 'catpuccin'})
 
 -- native lsp
 Plug 'neovim/nvim-lspconfig'

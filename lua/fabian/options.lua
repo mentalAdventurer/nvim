@@ -22,4 +22,7 @@ vim.opt.expandtab = true
 
 vim.opt.background = "dark" 
 -- or "light" for light mod
-vim.cmd([[colorscheme gruvbox]])
+-- vim.cmd([[colorscheme gruvbox]])
+vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
+require("catppuccin").setup()
+vim.cmd [[colorscheme catppuccin]]
