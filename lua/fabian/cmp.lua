@@ -3,6 +3,10 @@ if not cmp_status_ok then
   return
 end
 
+local snip_status_ok, luasnip = pcall(require,"luasnip")
+if not snip_status_ok then
+end
+
 local check_backspace = function()
   local col = vim.fn.col "." - 1
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
@@ -41,8 +45,8 @@ local kind_icons = {
 cmp.setup {
   snippet = {
     expand = function(args)
-      -- luasnip.lsp_expand(args.body) -- For `luasnip` users.
-      vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
+      luasnip.lsp_expand(args.body) -- For `luasnip` users.
+      -- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
     end,
   },
   mapping = {
@@ -77,8 +81,8 @@ cmp.setup {
   },
   sources = {
     { name = "nvim_lsp" },
-    -- { name = "luasnip" },
-    { name = 'ultisnips' }, -- For ultisnips users.
+    { name = "luasnip" },
+    -- { name = 'ultisnips' }, -- For ultisnips users.
     { name = "buffer" },
     { name = "path" },
   },
