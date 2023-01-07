@@ -67,8 +67,8 @@ telescope.setup {
         ["<C-q>"] = actions.send_to_qflist + actions.open_qflist,
         ["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
 
-        ["k"] = actions.move_selection_next,
-        ["l"] = actions.move_selection_previous,
+        ["j"] = actions.move_selection_next,
+        ["k"] = actions.move_selection_previous,
         ["H"] = actions.move_to_top,
         ["M"] = actions.move_to_middle,
         ["L"] = actions.move_to_bottom,
