@@ -2,42 +2,40 @@
 --                              Plugins                               --
 ------------------------------------------------------------------------
 
-local Plug = vim.fn['plug#']
-
+return require('packer').startup(function(use)
 vim.call('plug#begin', '~/.config/nvim/plugged')
 
 -- telescope requirements
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-telescope/telescope-fzy-native.nvim'
+use 'nvim-lua/popup.nvim'
+use 'nvim-lua/plenary.nvim'
+use 'nvim-telescope/telescope.nvim'
+use 'nvim-telescope/telescope-fzy-native.nvim'
 
 -- Snippets
-Plug 'L3MON4D3/LuaSnip'
-Plug 'saadparwaiz1/cmp_luasnip'
-Plug 'rafamadriz/friendly-snippets'
+use 'L3MON4D3/LuaSnip'
+use 'saadparwaiz1/cmp_luasnip'
+use 'rafamadriz/friendly-snippets'
 
 -- theme
-Plug 'ellisonleao/gruvbox.nvim'
-Plug 'nvim-lualine/lualine.nvim'
-Plug('catppuccin/nvim',{['as'] = 'catpuccin'})
+use 'ellisonleao/gruvbox.nvim'
+use 'nvim-lualine/lualine.nvim'
+use('catppuccin/nvim',{['as'] = 'catpuccin'})
 
 -- native lsp
-Plug 'neovim/nvim-lspconfig'
-Plug 'honza/vim-snippets'
+use 'neovim/nvim-lspconfig'
+use 'honza/vim-snippets'
 
 -- cmp plugins
-Plug "hrsh7th/nvim-cmp" -- The completion plugin
-Plug "hrsh7th/cmp-buffer" -- buffer completions
-Plug "hrsh7th/cmp-path" -- path completions
-Plug "hrsh7th/cmp-cmdline" -- cmdline completions
-Plug "saadparwaiz1/cmp_luasnip" -- snippet completions
-Plug "hrsh7th/cmp-nvim-lsp"
+use "hrsh7th/nvim-cmp" -- The completion plugin
+use "hrsh7th/cmp-buffer" -- buffer completions
+use "hrsh7th/cmp-path" -- path completions
+use "hrsh7th/cmp-cmdline" -- cmdline completions
+use "saadparwaiz1/cmp_luasnip" -- snippet completions
+use "hrsh7th/cmp-nvim-lsp"
 
 -- treesitter
-Plug('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
+use 'nvim-treesitter/nvim-treesitter'
 
 -- Null-ls
-Plug 'jose-elias-alvarez/null-ls.nvim'
-
-vim.call('plug#end')
+use 'jose-elias-alvarez/null-ls.nvim'
+end)
