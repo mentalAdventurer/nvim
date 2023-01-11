@@ -6,7 +6,7 @@ vim.opt.termguicolors = true
 vim.opt.wildmenu = true
 vim.opt.laststatus = 2
 vim.opt.incsearch = true
-vim.opt.ignorecase = true
+vim.opt.ignorecase = false
 
 vim.opt.number = true
 vim.opt.relativenumber = true
