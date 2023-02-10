@@ -29,7 +29,7 @@ vim.g.mapleader = ","
 -- adjustment to german keyboard
 keymap("n", "ü", "{", opts)
 keymap("n", "+", "}", opts)
-keymap("n", "Ü", "[", opts)
-keymap("n", "*", "]", opts)
+-- keymap("n", "Ü", "[", opts)
+-- keymap("n", "*", "]", opts)
 
 keymap("n", "<F5>", "<cmd>make<cr>", opts)
