@@ -36,4 +36,6 @@ use "hrsh7th/cmp-nvim-lsp"
 -- treesitter
 use 'nvim-treesitter/nvim-treesitter'
 
+-- Null-ls 
+use 'jose-elias-alvarez/null-ls.nvim'
 end)
