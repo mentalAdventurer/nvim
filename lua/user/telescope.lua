@@ -19,6 +19,8 @@ keymap("n", "<leader>ff", "<cmd>lua require('telescope.builtin').find_files()<cr
 keymap("n", "<leader>fh", "<cmd>lua require('telescope.builtin').find_files({hidden = true})<cr>", opts)
 keymap("n", "<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<cr>", opts)
 keymap("n", "<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr>", opts)
+keymap("n", "<leader>fs", "<cmd>lua require('telescope.builtin').git_status()<cr>", opts)
+keymap("n", "<leader>fc", "<cmd>lua require('telescope.builtin').git_commits()<cr>", opts)
 
 telescope.setup {
   defaults = {
