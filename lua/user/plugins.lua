@@ -14,7 +14,7 @@ use 'nvim-telescope/telescope-fzy-native.nvim'
 -- Snippets
 use 'L3MON4D3/LuaSnip'
 use 'saadparwaiz1/cmp_luasnip'
-use 'rafamadriz/friendly-snippets'
+-- use 'rafamadriz/friendly-snippets'
 
 -- theme
 use 'ellisonleao/gruvbox.nvim'
@@ -33,8 +33,14 @@ use "hrsh7th/cmp-cmdline" -- cmdline completions
 use "saadparwaiz1/cmp_luasnip" -- snippet completions
 use "hrsh7th/cmp-nvim-lsp"
 
+-- copilot
+use "github/copilot.vim"
+
 -- treesitter
 use 'nvim-treesitter/nvim-treesitter'
+
+-- Neogen
+use 'danymat/neogen'
 
 -- Null-ls 
 use 'jose-elias-alvarez/null-ls.nvim'
