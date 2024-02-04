@@ -38,8 +38,8 @@ use "github/copilot.vim"
 -- treesitter
 use 'nvim-treesitter/nvim-treesitter'
 
--- Neogen
-use 'danymat/neogen'
+-- Tmux
+use 'christoomey/vim-tmux-navigator'
 
 -- Null-ls 
 use 'jose-elias-alvarez/null-ls.nvim'
