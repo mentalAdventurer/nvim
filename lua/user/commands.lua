@@ -8,7 +8,7 @@ command('OpenNote','!openNote %',{})
 command('OpenNote', '!openNote %', {})
 command('ShotNote', '!$HOME/.config/nvim/script/screenshotNote %', {})
 
-command('Format','lua vim.lsp.buf.formatting()',{})
+command('Format','lua vim.lsp.buf.format()',{})
 command('MakeTags', '!ctags -R .', {}) 
 
 command('AutoCmp', 'lua require("cmp").setup.buffer { enabled = True }',{})
