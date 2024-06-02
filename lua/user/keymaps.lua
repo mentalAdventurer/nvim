@@ -27,8 +27,8 @@ vim.g.mapleader = ","
 -- keymap("n", "<c-w>ö", "<c-w>l", opts) 
 
 -- adjustment to german keyboard
-keymap("n", "ü", "{", opts)
-keymap("n", "+", "}", opts)
+-- keymap("n", "ü", "{", opts)
+-- keymap("n", "+", "}", opts)
 -- keymap("n", "Ü", "[", opts)
 -- keymap("n", "*", "]", opts)
 
