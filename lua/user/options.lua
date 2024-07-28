@@ -20,6 +20,10 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 
+-- Spell Checking
+vim.opt.spelllang = 'en_gb'
+vim.opt.spell = true
+
 vim.opt.background = "dark" 
 -- or "light" for light mod
 -- vim.cmd([[colorscheme gruvbox]])
