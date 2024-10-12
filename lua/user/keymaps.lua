@@ -10,26 +10,6 @@ local keymap = vim.api.nvim_set_keymap
 
 vim.g.mapleader = ","
 
--- change to shifted keybindings
--- keymap("", "j", "h", opts)
--- keymap("", "k", "j", opts)
--- keymap("", "l", "k", opts)
--- keymap("", "ö", "l", opts)
--- keymap("", "gj", "gh", opts)
--- keymap("", "gk", "gj", opts)
--- keymap("", "gl", "gk", opts)
--- keymap("", "gö", "gl", opts)
-
--- change window navigation to shifted keybindings
--- keymap("n", "<c-w>j", "<c-w>h", opts)
--- keymap("n", "<c-w>k", "<c-w>j", opts)
--- keymap("n", "<c-w>l", "<c-w>k", opts)
--- keymap("n", "<c-w>ö", "<c-w>l", opts) 
-
--- adjustment to german keyboard
--- keymap("n", "ü", "{", opts)
--- keymap("n", "+", "}", opts)
--- keymap("n", "Ü", "[", opts)
--- keymap("n", "*", "]", opts)
-
+-- Make Keymap
 keymap("n", "<F5>", "<cmd>make<cr>", opts)
+keymap("n", "<leader>jj", "<cmd>AerialNavOpen<cr>",opts)

@@ -35,7 +35,15 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 -- Setup of language servers
-require'lspconfig'.pyright.setup{}
+require'lspconfig'.pyright.setup{
+    settings = {
+        python = {
+              analysis = {
+                  typeCheckingMode="standard"
+              }
+        },
+    },
+}
 require'lspconfig'.bashls.setup{}
-require'lspconfig'.texlab.setup{}
-require'lspconfig'.lua_ls.setup{}
+require'lspconfig'.ruff.setup{}
+--require'lspconfig'.ruff_lsp.setup{}
