@@ -47,5 +47,4 @@ require'lspconfig'.pyright.setup{
 require'lspconfig'.bashls.setup{}
 require'lspconfig'.clangd.setup{}
 --require'lspconfig'.ruff.setup{}
-require'lspconfig'.texlab.setup{}
 --require'lspconfig'.ruff_lsp.setup{}
