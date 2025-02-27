@@ -31,3 +31,12 @@ vim.opt.spell = false
 vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
 require("catppuccin").setup()
 vim.cmd [[colorscheme catppuccin]]
+
+-- Git
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "gitcommit",
+    callback = function()
+        vim.opt.spell = true
+        vim.opt.spelllang = "en"  -- Set spell language (change if needed)
+    end,
+})
