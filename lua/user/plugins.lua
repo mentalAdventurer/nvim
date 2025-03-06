@@ -29,7 +29,7 @@ require("lazy").setup({
 	"honza/vim-snippets",
 	-- Theme
 	"nvim-lualine/lualine.nvim",
-	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+    {"folke/tokyonight.nvim", lazy = false, priority = 1000},
 	-- LSP (native) 
 	"neovim/nvim-lspconfig",
 	"hrsh7th/cmp-nvim-lsp",

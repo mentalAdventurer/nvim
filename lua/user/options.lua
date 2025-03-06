@@ -28,9 +28,7 @@ vim.opt.spell = false
 
 
 -- Theme
-vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
-require("catppuccin").setup()
-vim.cmd [[colorscheme catppuccin]]
+vim.cmd [[colorscheme tokyonight-night]]
 
 -- Git
 vim.api.nvim_create_autocmd("FileType", {
