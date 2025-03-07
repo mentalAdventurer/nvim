@@ -49,3 +49,4 @@ require'lspconfig'.clangd.setup{}
 --require'lspconfig'.ruff.setup{}
 require'lspconfig'.texlab.setup{}
 --require'lspconfig'.ruff_lsp.setup{}
+require'lspconfig'.jsonls.setup{}
