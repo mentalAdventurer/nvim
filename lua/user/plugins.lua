@@ -38,11 +38,6 @@ require("lazy").setup({
 	"hrsh7th/cmp-path", -- path completions
 	"hrsh7th/cmp-cmdline", -- cmdline completions
     "hrsh7th/cmp-nvim-lsp-signature-help",
-	-- Mason
-    "nvimtools/none-ls.nvim",
-	"mfussenegger/nvim-dap",
-	"williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
     -- Tmux
     "christoomey/vim-tmux-navigator",
     -- Git
