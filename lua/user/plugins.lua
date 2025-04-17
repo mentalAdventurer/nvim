@@ -46,3 +46,6 @@ require("lazy").setup({
     -- Aerial
     "stevearc/aerial.nvim",
 })
+
+require("blame").setup()
+require("gitsigns").setup()
