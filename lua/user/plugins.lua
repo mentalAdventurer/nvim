@@ -23,10 +23,6 @@ require("lazy").setup({
 	'nvim-lua/plenary.nvim',
 	'nvim-telescope/telescope.nvim',
 	'nvim-telescope/telescope-fzy-native.nvim',
-	-- Snippets
-	"L3MON4D3/LuaSnip",
-	"saadparwaiz1/cmp_luasnip",
-	"honza/vim-snippets",
 	-- Theme
 	"nvim-lualine/lualine.nvim",
     {"folke/tokyonight.nvim", lazy = false, priority = 1000},
