@@ -17,6 +17,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
     vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
     vim.keymap.set('n', '<space>f', vim.lsp.buf.format, bufopts)
     vim.keymap.set('n', '<leader>fl', require('telescope.builtin').lsp_dynamic_workspace_symbols, bufopts)
+    vim.keymap.set('n', 'grr', require('telescope.builtin').builtin.lsp_references, bufopts)
   end,
 })
 
