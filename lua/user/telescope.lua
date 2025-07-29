@@ -25,6 +25,7 @@ keymap("n", "<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr>",
 keymap("n", "<leader>fd", "<cmd>lua require('telescope.builtin').diagnostics()<cr>", opts)
 keymap("n", "<leader>fs", "<cmd>lua require('telescope.builtin').git_status()<cr>", opts)
 keymap("n", "<leader>fc", "<cmd>lua require('telescope.builtin').git_commits()<cr>", opts)
+keymap("n", "<leader>ft", "<cmd>lua require('telescope.builtin').treesitter()<cr>", opts)
 
 telescope.setup {
   defaults = {
