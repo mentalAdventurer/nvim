@@ -22,9 +22,22 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 -- Enaable LSP servers
-vim.lsp.enable("pyright")
+vim.lsp.enable("basedpyright")
 vim.lsp.enable("bashls")
 vim.lsp.enable("clangd")
 vim.lsp.enable("ruff")
 vim.lsp.enable("jsonls")
 vim.lsp.enable("fish_lsp")
+
+vim.lsp.config("basedpyright", {
+	settings = {
+		basedpyright = {
+			analysis = {
+				autoSearchPaths = true,
+				diagnosticMode = "openFilesOnly",
+				useLibraryCodeForTypes = true,
+				typeCheckingMode = "recommended",
+			},
+		},
+	},
+})
