@@ -12,4 +12,4 @@ vim.g.mapleader = ","
 
 -- Make Keymap
 keymap("n", "<F5>", "<cmd>make<cr>", opts)
-keymap("n", "<leader>jj", "<cmd>AerialNavOpen<cr>",opts)
+keymap("n", "<leader>jj", "<cmd>AerialNavOpen<cr>", opts)

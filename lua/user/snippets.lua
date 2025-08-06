@@ -2,7 +2,7 @@
 --                              Snippets                              --
 ------------------------------------------------------------------------
 
-local snip_status_ok, ls = pcall(require,"luasnip")
+local snip_status_ok, ls = pcall(require, "luasnip")
 if not snip_status_ok then
 end
 
