@@ -41,3 +41,6 @@ vim.lsp.config("basedpyright", {
 		},
 	},
 })
+vim.lsp.config("clangd", {
+	cmd = { "clangd", "--enable-config", "--query-driver=/home/*/repos/**/arm-none-eabi-*" },
+})
