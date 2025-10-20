@@ -35,6 +35,7 @@ local kind_icons = {
 	Event = "",
 	Operator = "",
 	TypeParameter = "",
+	Copilot = "",
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
 
@@ -63,8 +64,9 @@ cmp.setup({
 			vim_item.menu = ({
 				nvim_lsp_signature_help = "[SIGNATURE]",
 				nvim_lsp = "[LSP]",
-				buffer = "[Buffer]",
 				path = "[Path]",
+				copilot = "[COPILOT]",
+				buffer = "[Buffer]",
 			})[entry.source.name]
 			return vim_item
 		end,
@@ -72,8 +74,9 @@ cmp.setup({
 	sources = {
 		{ name = "nvim_lsp_signature_help" },
 		{ name = "nvim_lsp" },
-		{ name = "buffer" },
+		{ name = "copilot" },
 		{ name = "path" },
+		{ name = "buffer" },
 	},
 	confirm_opts = {
 		behavior = cmp.ConfirmBehavior.Replace,
