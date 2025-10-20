@@ -36,11 +36,18 @@ require("lazy").setup({
 	-- Tmux
 	"christoomey/vim-tmux-navigator",
 	-- Git
-	"FabijanZulj/blame.nvim",
-	"lewis6991/gitsigns.nvim",
+	{
+		"FabijanZulj/blame.nvim",
+		config = function()
+			require("blame").setup()
+		end,
+	},
+	{
+		"lewis6991/gitsigns.nvim",
+		config = function()
+			require("gitsigns").setup()
+		end,
+	},
 	-- Aerial
 	"stevearc/aerial.nvim",
 })
-
-require("blame").setup()
-require("gitsigns").setup()
