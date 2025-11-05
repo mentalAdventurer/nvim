@@ -4,7 +4,7 @@ return {
 	event = "InsertEnter",
 	opts = {
 		suggestion = { enabled = false },
-		panel = { enabled = false },
+		panel = { enabled = true, auto_refresh = true },
 		filetypes = {
 			markdown = true,
 			help = true,
