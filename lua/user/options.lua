@@ -26,6 +26,8 @@ vim.opt.background = "dark"
 vim.opt.spelllang = "en_us"
 vim.opt.spell = false
 
+vim.o.winborder = "rounded"
+
 -- Theme
 vim.cmd([[colorscheme tokyonight-night]])
 
