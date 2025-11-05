@@ -1,10 +1,5 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
-	-- Telescope
-	"nvim-lua/popup.nvim",
-	"nvim-lua/plenary.nvim",
-	"nvim-telescope/telescope.nvim",
-	"nvim-telescope/telescope-fzy-native.nvim",
 	-- Theme
 	"nvim-lualine/lualine.nvim",
 	{ "folke/tokyonight.nvim", lazy = false, priority = 1000 },
