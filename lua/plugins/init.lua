@@ -22,11 +22,4 @@ return {
 	},
 	-- Aerial
 	"stevearc/aerial.nvim",
-	-- Copilot
-	{
-		"zbirenbaum/copilot.lua",
-		config = function()
-			require("copilot").setup()
-		end,
-	},
 }
