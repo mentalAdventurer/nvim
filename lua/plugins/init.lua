@@ -1,5 +1,4 @@
 return {
-	"nvim-treesitter/nvim-treesitter",
 	{ "folke/tokyonight.nvim", lazy = false, priority = 1000 },
 	-- LSP (native)
 	"neovim/nvim-lspconfig",
