@@ -5,8 +5,6 @@ return {
 	{ "folke/tokyonight.nvim", lazy = false, priority = 1000 },
 	-- LSP (native)
 	"neovim/nvim-lspconfig",
-	-- Tmux
-	"christoomey/vim-tmux-navigator",
 	-- Git
 	{
 		"FabijanZulj/blame.nvim",
