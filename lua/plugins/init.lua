@@ -1,7 +1,5 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
-	-- Theme
-	"nvim-lualine/lualine.nvim",
 	{ "folke/tokyonight.nvim", lazy = false, priority = 1000 },
 	-- LSP (native)
 	"neovim/nvim-lspconfig",
@@ -18,6 +16,4 @@ return {
 			require("gitsigns").setup()
 		end,
 	},
-	-- Aerial
-	"stevearc/aerial.nvim",
 }
