@@ -1,6 +1,4 @@
 return {
-	-- LSP (native)
-	"neovim/nvim-lspconfig",
 	-- Git
 	{
 		"FabijanZulj/blame.nvim",
