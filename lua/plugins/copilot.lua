@@ -9,6 +9,7 @@ return {
 			markdown = true,
 			help = true,
 			gitcommit = true,
+			init = true,
 		},
 	},
 }
