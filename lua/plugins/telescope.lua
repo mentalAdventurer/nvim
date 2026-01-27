@@ -13,6 +13,8 @@ return {
 			telescope.setup({
 				defaults = {
 					path_display = { "filename_first" },
+					layout_strategy = "vertical",
+					layout_config = { height = 0.95, width = 0.8, preview_cutoff = 20 },
 					mappings = {
 						i = {
 							["<C-n>"] = actions.move_selection_next,
