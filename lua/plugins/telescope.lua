@@ -23,6 +23,10 @@ return {
 							["<C-u>"] = actions.preview_scrolling_up,
 							["<C-d>"] = actions.preview_scrolling_down,
 						},
+						n = {
+							["<C-y>"] = actions.preview_scrolling_up,
+							["<C-e>"] = actions.preview_scrolling_down,
+						},
 					},
 				},
 			})
