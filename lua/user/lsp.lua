@@ -37,6 +37,12 @@ vim.lsp.config("basedpyright", {
 				diagnosticMode = "openFilesOnly",
 				useLibraryCodeForTypes = true,
 				typeCheckingMode = "recommended",
+				diagnosticSeverityOverrides = {
+					reportMissingTypeStubs = false,
+					reportAny = false,
+					reportExplicitAny = false,
+					reportUnknownMemberType = false,
+				},
 			},
 		},
 	},
