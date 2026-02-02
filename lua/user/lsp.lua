@@ -22,6 +22,10 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 -- Enaable LSP servers
+vim.diagnostic.config({
+	underline = { severity = { min = vim.diagnostic.severity.WARN } },
+})
+
 vim.lsp.enable("basedpyright")
 vim.lsp.enable("bashls")
 vim.lsp.enable("clangd")
