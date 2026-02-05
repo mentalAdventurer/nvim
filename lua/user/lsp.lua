@@ -46,6 +46,7 @@ vim.lsp.config("basedpyright", {
 					reportAny = false,
 					reportExplicitAny = false,
 					reportUnknownMemberType = false,
+					reportUnknownVariableType = false,
 				},
 			},
 		},
