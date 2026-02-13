@@ -8,6 +8,7 @@ return {
 		filetypes = {
 			python = true,
 			c = true,
+			cpp = true,
 			markdown = true,
 			help = true,
 			gitcommit = true,
