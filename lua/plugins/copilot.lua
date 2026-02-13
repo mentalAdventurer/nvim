@@ -13,6 +13,7 @@ return {
 			help = true,
 			gitcommit = true,
 			init = true,
+			lua = true,
 		},
 	},
 }
