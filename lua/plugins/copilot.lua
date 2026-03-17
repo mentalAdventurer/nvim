@@ -14,6 +14,8 @@ return {
 			gitcommit = true,
 			init = true,
 			lua = true,
+			meson = true,
+			yaml = true,
 		},
 	},
 }
