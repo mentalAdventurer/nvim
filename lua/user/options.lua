@@ -39,3 +39,6 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.opt.spelllang = "en" -- Set spell language (change if needed)
 	end,
 })
+
+-- Enable Treesitter highlighting
+vim.treesitter.start()
