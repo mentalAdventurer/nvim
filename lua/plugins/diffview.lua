@@ -9,11 +9,11 @@ return {
 		},
 	},
 	-- optional: lazy-load on command
-	-- cmd = {
-	--     "DiffviewOpen",
-	--     "DiffviewToggle",
-	--     "DiffviewFileHistory",
-	--     "DiffviewDiffFiles",
-	--     "DiffviewLog",
-	-- },
+	cmd = {
+		"DiffviewOpen",
+		"DiffviewToggle",
+		"DiffviewFileHistory",
+		"DiffviewDiffFiles",
+		"DiffviewLog",
+	},
 }
