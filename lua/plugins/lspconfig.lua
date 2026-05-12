@@ -56,7 +56,7 @@ return {
 			cmd = {
 				"clangd",
 				"--enable-config",
-				"--query-driver=/home/*/repos/**/arm-none-eabi-*,/home/*/.espressif/**/bin/xtensa-esp32-elf-*",
+				"--query-driver=/home/*/repos/**/arm-none-eabi-*,/home/*/.espressif/**/bin/xtensa-esp32-elf-*,/usr/bin/arm-none-eabi-*",
 			},
 		})
 	end,
