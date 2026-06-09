@@ -47,6 +47,7 @@ return {
 							reportUnknownMemberType = false,
 							reportUnknownVariableType = false,
 							reportUnusedCallResult = false,
+							reportImplicitRelativeImport = false,
 						},
 					},
 				},
