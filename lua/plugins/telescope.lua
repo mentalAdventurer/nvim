@@ -42,7 +42,11 @@ return {
 			keymap("n", "<leader>fh", function()
 				builtin.find_files({ hidden = true })
 			end, opts)
-			keymap("n", "<leader>fg", builtin.live_grep, opts)
+			keymap("n", "<leader>fg", function()
+				builtin.live_grep({
+					additional_args = { "--hidden" },
+				})
+			end, opts)
 			keymap("n", "<leader>fw", builtin.grep_string, opts)
 			keymap("n", "<leader>fk", builtin.keymaps, opts)
 			keymap("n", "<leader>fb", builtin.buffers, opts)
