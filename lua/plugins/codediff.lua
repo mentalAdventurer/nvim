@@ -1,5 +1,5 @@
 return {
-	"mentalAdventurer/codediff.nvim",
+	"esmuellert/codediff.nvim",
 	cmd = "CodeDiff",
 	opts = {
 		diff = {
