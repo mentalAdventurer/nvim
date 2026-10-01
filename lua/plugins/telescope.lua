@@ -42,6 +42,9 @@ return {
 			keymap("n", "<leader>fh", function()
 				builtin.find_files({ hidden = true })
 			end, opts)
+			keymap("n", "<leader>fi", function()
+				builtin.find_files({ no_ignore = true })
+			end, opts)
 			keymap("n", "<leader>fg", function()
 				builtin.live_grep({
 					additional_args = { "--hidden" },
